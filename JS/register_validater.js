@@ -1,5 +1,3 @@
-'use strict';
-//declearing html elements
 
 const form = document.querySelector("form");
 const userEmail = document.querySelector('#userEmail')
@@ -79,7 +77,7 @@ form.addEventListener('submit',(e)=>{
         password:  userPass.value.trim(),
     }
     localStorage.setItem('user', JSON.stringify(userRegisterData));
-    window.location.href = "login.html";
+    window.location.href = "index.html";
     console.log(userRegisterData);
 
 });
