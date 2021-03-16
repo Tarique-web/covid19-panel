@@ -6,19 +6,21 @@ const userConfirmPass = document.getElementById('userConfirmPass');
 const userFirstName = document.getElementById('userFirstName');
 const userLastName = document.getElementById('userLastName');
 const userBirthDate = document.getElementById('userBirthDate')
-const mobileNumber = document.querySelector('#mobileNumber');
+const mobileNumber = document.getElementById('mobileNumber');
+const address = document.getElementById('address');
 
 // first Name Validator
 userFirstName.addEventListener('blur', () => {
-    let regex = /^[a-zA-Z ]+${2,20}$/;
+    let regex = /^[a-zA-Z]([0-9a-zA-Z]){2,20}$/;
     let firstname = userFirstName.value;
+    console.log(firstname);
     return (regex.test(firstname) ? userFirstName.classList.add('is-valid')
         : userFirstName.classList.add('is-invalid'));
     
 });
 //  Last Name Validator 
 userLastName.addEventListener('blur', () => {
-    let regex = /^[a-zA-Z ]+${2,20}$/;
+    let regex = /^[a-zA-Z]([0-9a-zA-Z]){2,20}$/;
     let lastname = userLastName.value;
     return (regex.test(lastname) ? userLastName.classList.add('is-valid')
         : userLastName.classList.add('is-invalid'));
@@ -68,9 +70,6 @@ userConfirmPass.addEventListener('blur', () => {
         : userConfirmPass.classList.add('is-invalid'));
 
 });
-
-// password matching
-
 
 
 // Save the SigneUp Details In Local Storage;

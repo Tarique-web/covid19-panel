@@ -20,98 +20,115 @@
 </head>
 
 <body>
-    <section class="main_section">
+    <div class="pt-5 px-3">
         <div class="container">
-            <div class="col-12">
-                <div class="row justify-content-center">
-                    <div class="col-12 signup_container">
-                        <h2 class="text-center text-primary mb-4">Create Account</h2>
-                        <form>
-                            <div class="row row-cols-1 row-cols-lg-2  row-cols-md-1 mb-4">
-                                <div class="col">
-                                    <!--  first names -->
+            <div class="row justify-content-center">
+                <div class="col-12 signup_container">
+                    <h2 class="text-center text-primary mb-4">Create Account</h2>
+                    <form>
+                        <div class="row row-cols-1 row-cols-lg-2  row-cols-md-1 mb-4">
+                            <div class="col">
+                                <!--  first names -->
 
-                                    <div class="form-group">
-                                        <label class="form-label" for="userFirstName">First name</label>
-                                        <input type="text" id="userFirstName" class="form-control" autocomplete="off"  required>
-                                        <small id="passwordHelpBlock" class="invalid-feedback">
-                                            your first name must be 3-20 characters long, should not start number.
-                                        </small>
+                                <div class="form-group">
+                                    <label class="form-label" for="userFirstName">First name</label>
+                                    <input type="text" id="userFirstName" class="form-control" autocomplete="off"
+                                        required>
+                                    <small id="passwordHelpBlock" class="invalid-feedback">
+                                        your first name must be 3-20 characters long, should not start number.
+                                    </small>
 
-                                    </div>
                                 </div>
-                                <div class="col">
-                                    <!--  Last names -->
+                            </div>
+                            <div class="col">
+                                <!--  Last names -->
 
-                                    <div class="form-group">
-                                        <label class="form-label" for="userLastName">Last name</label>
-                                        <input type="text" id="userLastName" class="form-control" autocomplete="off" required>
-                                        <small id="passwordHelpBlock" class="invalid-feedback">
-                                            your last name must be 3-20 characters long, should not start number.
-                                        </small>
+                                <div class="form-group">
+                                    <label class="form-label" for="userLastName">Last name</label>
+                                    <input type="text" id="userLastName" class="form-control" autocomplete="off"
+                                        required>
+                                    <small id="passwordHelpBlock" class="invalid-feedback">
+                                        your last name must be 3-20 characters long, should not start number.
+                                    </small>
 
-                                    </div>
                                 </div>
-                                <div class="col">
-                                    <!-- Email input -->
-                                    <div class="form-group mb-4">
-                                        <label class="form-label" for="userEmail">Email address</label>
-                                        <input type="email" id="userEmail" class="form-control" autocomplete="off" required>
-                                        <small id="passwordHelpBlock" class="invalid-feedback ">
-                                            you entered invalid email.
-                                        </small>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <!-- Mobile Number -->
-                                    <label class="form-label" for="phone">Mobile</label>
-                                    <input type="number" id="mobileNumber" class="form-control" name="mobile" autocomplete="off" required>
-                                    <small id="passwordHelpBlock" class="invalid-feedback text-capitalize text-danger">
-                                        Mobile Number Must be 10 digit.
+                            </div>
+                            <div class="col">
+                                <!-- Email input -->
+                                <div class="form-group">
+                                    <label class="form-label" for="userEmail">Email address</label>
+                                    <input type="email" id="userEmail" class="form-control" autocomplete="off" required>
+                                    <small id="passwordHelpBlock" class="invalid-feedback ">
+                                        you entered invalid email.
                                     </small>
                                 </div>
-
-                                <div class="col">
-                                    <!-- Date Input -->
-                                    <label class="form-label" for="userBirthDate">Date</label>
-                                    <input type="date" id="userBirthDate" class="form-control" name="birthday" autocomplete="off" required>
-                                    <small id="passwordHelpBlock" class="invalid-feedback text-capitalize text-danger">
-                                        Age Must be 18 or greater than 18.
-                                    </small>
-                                </div>
-
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label class="form-label" for="userPass">Password</label>
-                                        <input type="password" id="userPass" class="form-control" autocomplete="off" required>
-                                        <small id="passwordHelpBlock" class="invalid-feedback">
-                                            Your password must be 8-25 characters long, contain letters and numbers, and
-                                            must not contain spaces, special characters, or emoji.
-                                        </small>
-                                    </div>
-                                </div>
-                                <div class="col">
-                                    <div class="form-group">
-                                        <label class="form-label" for="userConfirmPass">Confirm Password</label>
-                                        <input type="password" id="userConfirmPass" class="form-control" autocomplete="off" required>
-                                        <small id="passwordHelpBlock" class="invalid-feedback pass-match">
-                                            Your password must be 8-25 characters long, contain letters and numbers, and
-                                            must not contain spaces, special characters, or emoji.
-                                        </small>
-                                    </div>
+                            </div>
+                            <div class="col">
+                                <!-- Mobile Number -->
+                                <div class="form-group">
+                                <label class="form-label" for="phone">Mobile</label>
+                                <input type="number" id="mobileNumber" class="form-control" name="mobile"
+                                    autocomplete="off" required>
+                                <small id="passwordHelpBlock" class="invalid-feedback text-capitalize text-danger">
+                                    Mobile Number Must be 10 digit.
+                                </small>
                                 </div>
                             </div>
 
-                            <!-- Submit button -->
-                            <button type="submit" class="btn btn-primary btn-block mb-4">Register</button>
+                            <div class="col">
+                                <!-- Date Input -->
+                                <div class="form-group">
+                                <label class="form-label" for="userBirthDate">Date</label>
+                                <input type="date" id="userBirthDate" class="form-control" name="birthday"
+                                    autocomplete="off" required>
+                                <small id="passwordHelpBlock" class="invalid-feedback text-capitalize text-danger">
+                                    Age Must be 18 or greater than 18.
+                                </small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!-- Address -->
+                                <div class="form-group">
+                                    <label class="form-label" for="address">address</label>
+                                    <input type="text" id="address" class="form-control" name="address"
+                                        autocomplete="off" required>
+                                    <small id="passwordHelpBlock" class="invalid-feedback text-capitalize text-danger">
+                                        Adress con't be empty.
+                                    </small>
+                                </div>
+                            </div>
 
-                        </form>
-                        <!-- Login button -->
-                        <button type="submit" class="btn btn-primary"
-                            onclick="window.location.href='./index.html'">Login</button>
-                    </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label class="form-label" for="userPass">Password</label>
+                                    <input type="password" id="userPass" class="form-control" autocomplete="off"
+                                        required>
+                                    <small id="passwordHelpBlock" class="invalid-feedback">
+                                        Your password must be 8-25 characters long, contain letters and numbers, and
+                                        must not contain spaces, special characters, or emoji.
+                                    </small>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-group">
+                                    <label class="form-label" for="userConfirmPass">Confirm Password</label>
+                                    <input type="password" id="userConfirmPass" class="form-control" autocomplete="off"
+                                        required>
+                                    <small id="passwordHelpBlock" class="invalid-feedback pass-match">
+                                        Your password must be 8-25 characters long, contain letters and numbers, and
+                                        must not contain spaces, special characters, or emoji.
+                                    </small>
+                                </div>
+                            </div>
+                        </div>
 
+                        <!-- Submit button -->
+                        <button type="submit" class="btn btn-primary btn-block mb-4">Register</button>
 
+                    </form>
+                    <!-- Login button -->
+                    <button type="submit" class="btn btn-primary"
+                        onclick="window.location.href='./index.html'">Login</button>
                 </div>
 
 
@@ -119,7 +136,7 @@
         </div>
 
 
-    </section>
+    </div>
     <script src="./JS/register_validater.js"></script>
 </body>
 
