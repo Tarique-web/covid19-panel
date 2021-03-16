@@ -6,10 +6,11 @@ const userConfirmPass = document.getElementById('userConfirmPass');
 const userFirstName = document.getElementById('userFirstName');
 const userLastName = document.getElementById('userLastName');
 const userBirthDate = document.getElementById('userBirthDate')
+const mobileNumber = document.querySelector('#mobileNumber');
 
 // first Name Validator
 userFirstName.addEventListener('blur', () => {
-    let regex = /^[a-zA-Z]([0-9a-zA-Z]){2,20}$/;
+    let regex = /^[a-zA-Z ]+${2,20}$/;
     let firstname = userFirstName.value;
     return (regex.test(firstname) ? userFirstName.classList.add('is-valid')
         : userFirstName.classList.add('is-invalid'));
@@ -17,12 +18,19 @@ userFirstName.addEventListener('blur', () => {
 });
 //  Last Name Validator 
 userLastName.addEventListener('blur', () => {
-    let regex = /^[a-zA-Z]([0-9a-zA-Z]){2,20}$/;
+    let regex = /^[a-zA-Z ]+${2,20}$/;
     let lastname = userLastName.value;
     return (regex.test(lastname) ? userLastName.classList.add('is-valid')
         : userLastName.classList.add('is-invalid'));
 
 });
+mobileNumber.addEventListener('blur', () =>{
+    let regex = /^\d{10}$/;
+    let lastname = mobileNumber.value;
+    return (regex.test(lastname) ? mobileNumber.classList.add('is-valid')
+        : mobileNumber.classList.add('is-invalid'));
+
+})
 
 //  Email ID Validator 
 userEmail.addEventListener('blur', () => {
@@ -34,9 +42,13 @@ userEmail.addEventListener('blur', () => {
 });
 //  Date of Birth Validator 
 userBirthDate.addEventListener('blur', () => {
-    
     let birthdate =  Date.parse(userBirthDate.value);
-    let currentAge = Date.now();
+        var ageDifMs = Date.now() - birthday.getTime();
+        var ageDate = new Date(ageDifMs); // miliseconds from epoch
+        return Math.abs(ageDate.getUTCFullYear() - 1970);
+    
+    console.log(userBirthDate.value,currentAge)
+
     return ((currentAge>=18) ? userBirthDate.classList.add('is-valid')
         : userBirthDate.classList.add('is-invalid'));
 
@@ -44,7 +56,7 @@ userBirthDate.addEventListener('blur', () => {
 
 //  password Validator 
 userPass.addEventListener('blur', () => {
-    let regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z0-9@!#?]{8,20}$/;
+    let regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/;
     let password = userPass.value;
     return (regex.test(password) ? userPass.classList.add('is-valid')
         : userPass.classList.add('is-invalid'));
@@ -53,7 +65,7 @@ userPass.addEventListener('blur', () => {
 //  Confirm Validator 
 userConfirmPass.addEventListener('blur', () => {
     console.log("work");
-    let regex = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])[A-Za-z0-9@!#?]{8,20}$/;
+    let regex = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,20}$/
     let confirmPassword = userConfirmPass.value;
     return (regex.test(confirmPassword) ? userConfirmPass.classList.add('is-valid')
         : userConfirmPass.classList.add('is-invalid'));

@@ -7,15 +7,9 @@ const userEmail = document.getElementById('userEmail');
 const userPass = document.querySelector('#userPass');
 const login_msg = document.getElementById('login_msg')
 
-
-
-
 // ----login validation
 const userAuthenticate_msg = (user_msg) => {
-
     document.getElementById('login_msg').innerText = user_msg;
-    
-
 }
 
 login_form.addEventListener('submit', (e) => {
@@ -25,7 +19,6 @@ login_form.addEventListener('submit', (e) => {
         if ((userEmail.value === loginDetails.email) && (userPass.value === loginDetails.password)) {
             userAuthenticate_msg("Login-Success...")
                 window.location.href = "corona_portal.html";
-
 
         } else {
             userAuthenticate_msg("Password or Email is wrong !")
