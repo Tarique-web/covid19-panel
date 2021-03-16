@@ -42,13 +42,10 @@ userEmail.addEventListener('blur', () => {
 });
 //  Date of Birth Validator 
 userBirthDate.addEventListener('blur', () => {
-    let birthdate =  Date.parse(userBirthDate.value);
-        var ageDifMs = Date.now() - birthday.getTime();
-        var ageDate = new Date(ageDifMs); // miliseconds from epoch
-        return Math.abs(ageDate.getUTCFullYear() - 1970);
-    
-    console.log(userBirthDate.value,currentAge)
 
+    var ageDifMs = Date.now() - Date.parse(userBirthDate.value);
+    var ageDate = new Date(ageDifMs); // miliseconds from epoch
+    var currentAge = Math.abs(ageDate.getUTCFullYear() - 1970);
     return ((currentAge>=18) ? userBirthDate.classList.add('is-valid')
         : userBirthDate.classList.add('is-invalid'));
 
