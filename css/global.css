@@ -13,6 +13,24 @@ body{
     padding: 100px 18px 64px 18px;
 }
 
+.progress {
+	background-color: #d8d8d8;
+	border-radius: 20px;
+	position: relative;
+	height: 30px;
+	width: 300px;
+}
+
+.progress-done {
+	background: linear-gradient(to left, #F2709C, #FF9472);
+	box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
+	border-radius: 20px;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	transition: 1s ease 0.3s;
+}
+
 @media only screen and (max-width: 400px) {
     *{
         font-size: 4vw;
