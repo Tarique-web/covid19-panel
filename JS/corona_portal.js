@@ -3,7 +3,8 @@
 
 const statecode = document.querySelector('.all_state_section');
 
-let state_arr = [];
+const progress = document.querySelector('.progress-done');
+
 
 
 function state_case_count(count){
@@ -63,9 +64,6 @@ const fetchCovidData = () => {
         .catch(error => console.error(error))
 
 };
-fetchCovidData();   
-const progress = document.querySelector('.progress-done');
-
-// progress.style.width = progress.getAttribute('data-done') + '%';
+fetchCovidData();  
 
 

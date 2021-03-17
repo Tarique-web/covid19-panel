@@ -16,8 +16,8 @@ body{
 .progress {
 	background-color: #d8d8d8;
 	border-radius: 20px;
-	height: 30px;
-	width: 300px;
+	height: 1.5rem;
+	width: 15rem;
 }
 
 .progress-done {
@@ -25,7 +25,7 @@ body{
 	box-shadow: 0 3px 3px -5px #F2709C, 0 2px 5px #F2709C;
 	border-radius: 20px;
 	height: 100%;
-	width: 100%;
+	width: 0%;
 	opacity: 0;
 	transition: 1s ease 0.3s;
 }
