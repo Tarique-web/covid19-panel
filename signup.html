@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <div class="pt-5 px-3">
+    <div class="p-3">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 signup_container">
@@ -29,12 +29,11 @@
                         <div class="row row-cols-1 row-cols-lg-2  row-cols-md-1 mb-4">
                             <div class="col">
                                 <!--  first names -->
-
                                 <div class="form-group">
                                     <label class="form-label" for="userFirstName">First name</label>
                                     <input type="text" id="userFirstName" class="form-control" autocomplete="off"
                                         required>
-                                    <small id="passwordHelpBlock" class="invalid-feedback">
+                                    <small id="error_msg" class="invalid-feedback">
                                         your first name must be 3-20 characters long, should not start number.
                                     </small>
 
@@ -47,7 +46,7 @@
                                     <label class="form-label" for="userLastName">Last name</label>
                                     <input type="text" id="userLastName" class="form-control" autocomplete="off"
                                         required>
-                                    <small id="passwordHelpBlock" class="invalid-feedback">
+                                    <small id="error_msg" class="invalid-feedback">
                                         your last name must be 3-20 characters long, should not start number.
                                     </small>
 
@@ -58,7 +57,7 @@
                                 <div class="form-group">
                                     <label class="form-label" for="userEmail">Email address</label>
                                     <input type="email" id="userEmail" class="form-control" autocomplete="off" required>
-                                    <small id="passwordHelpBlock" class="invalid-feedback ">
+                                    <small id="error_msg" class="invalid-feedback ">
                                         you entered invalid email.
                                     </small>
                                 </div>
@@ -66,33 +65,33 @@
                             <div class="col">
                                 <!-- Mobile Number -->
                                 <div class="form-group">
-                                <label class="form-label" for="phone">Mobile</label>
-                                <input type="number" id="mobileNumber" class="form-control" name="mobile"
-                                    autocomplete="off" required>
-                                <small id="passwordHelpBlock" class="invalid-feedback text-capitalize text-danger">
-                                    Mobile Number Must be 10 digit.
-                                </small>
+                                    <label class="form-label" for="phone">Mobile</label>
+                                    <input type="number" id="mobileNumber" class="form-control" name="mobile"
+                                        autocomplete="off" required>
+                                    <small id="error_msg" class="invalid-feedback text-capitalize text-danger">
+                                        Mobile Number Must be 10 digit.
+                                    </small>
                                 </div>
                             </div>
 
                             <div class="col">
                                 <!-- Date Input -->
                                 <div class="form-group">
-                                <label class="form-label" for="userBirthDate">Date</label>
-                                <input type="date" id="userBirthDate" class="form-control" name="birthday"
-                                    autocomplete="off" required>
-                                <small id="passwordHelpBlock" class="invalid-feedback text-capitalize text-danger">
-                                    Age Must be 18 or greater than 18.
-                                </small>
+                                    <label class="form-label" for="userBirthDate">Date</label>
+                                    <input type="date" id="userBirthDate" class="form-control" name="birthday"
+                                        autocomplete="off" required>
+                                    <small id="error_msg" class="invalid-feedback text-capitalize text-danger">
+                                        Age Must be 18 or greater than 18.
+                                    </small>
                                 </div>
                             </div>
                             <div class="col">
                                 <!-- Address -->
                                 <div class="form-group">
-                                    <label class="form-label" for="address">address</label>
+                                    <label class="form-label" for="address">Address</label>
                                     <input type="text" id="address" class="form-control" name="address"
                                         autocomplete="off" required>
-                                    <small id="passwordHelpBlock" class="invalid-feedback text-capitalize text-danger">
+                                    <small id="error_msg" class="invalid-feedback text-capitalize text-danger">
                                         Adress con't be empty.
                                     </small>
                                 </div>
@@ -103,7 +102,7 @@
                                     <label class="form-label" for="userPass">Password</label>
                                     <input type="password" id="userPass" class="form-control" autocomplete="off"
                                         required>
-                                    <small id="passwordHelpBlock" class="invalid-feedback">
+                                    <small id="error_msg" class="invalid-feedback">
                                         Your password must be 8-25 characters long, contain letters and numbers, and
                                         must not contain spaces, special characters, or emoji.
                                     </small>
@@ -114,7 +113,7 @@
                                     <label class="form-label" for="userConfirmPass">Confirm Password</label>
                                     <input type="password" id="userConfirmPass" class="form-control" autocomplete="off"
                                         required>
-                                    <small id="passwordHelpBlock" class="invalid-feedback pass-match">
+                                    <small id="error_msg" class="invalid-feedback pass-match">
                                         Your password must be 8-25 characters long, contain letters and numbers, and
                                         must not contain spaces, special characters, or emoji.
                                     </small>

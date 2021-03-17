@@ -8,6 +8,7 @@ const userLastName = document.getElementById('userLastName');
 const userBirthDate = document.getElementById('userBirthDate')
 const mobileNumber = document.getElementById('mobileNumber');
 const address = document.getElementById('address');
+const country_code = document.getElementById('country-code');
 
 // first Name Validator
 userFirstName.addEventListener('blur', () => {
@@ -89,3 +90,5 @@ form.addEventListener('submit',(e)=>{
     console.log(userRegisterData);
 
 });
+
+
