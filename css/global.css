@@ -9,8 +9,8 @@ body{
 }
 
 .main_section{
-    padding-top: 100px;
-    padding-bottom: 65px;
+ 
+    padding: 100px 18px 64px 18px;
 }
 
 @media only screen and (max-width: 400px) {
